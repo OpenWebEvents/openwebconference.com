@@ -79,7 +79,7 @@ export default function RootLayout({
             </Link>
             <ModeToggle />
           </header>
-          <main className="bg-gradient-to-b from-white to-[#F3F4F6]">
+          <main className="bg-gradient-to-b from-background to-muted">
             {children}
           </main>
           <footer className="container mx-auto p-4">
