@@ -3,10 +3,19 @@ export default function PrivacyPolicy() {
     <div className="container mx-auto px-4 py-8 max-w-3xl">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4">
-        At Open Web Events, we are committed to protecting your privacy and
-        ensuring the security of your personal information. This Privacy Policy
-        outlines how we collect, use, and safeguard your data when you interact
-        with our website and services.
+        At{" "}
+        <a
+          href="https://openwebevents.com"
+          className="text-primary hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Web Events
+        </a>{" "}
+        , we are committed to protecting your privacy and ensuring the security
+        of your personal information. This Privacy Policy outlines how we
+        collect, use, and safeguard your data when you interact with our website
+        and services.
       </p>
       <h2 className="text-2xl font-semibold mb-2">Information Collection</h2>
       <p className="mb-4">

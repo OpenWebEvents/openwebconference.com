@@ -3,10 +3,18 @@ export default function CodeOfConduct() {
     <div className="container mx-auto px-4 py-8 max-w-3xl">
       <h1 className="text-3xl font-bold mb-4">Code of Conduct</h1>
       <p className="mb-4">
-        Open Web Events is dedicated to providing a harassment-free and
-        inclusive experience for everyone, regardless of gender, gender identity
-        and expression, sexual orientation, disability, physical appearance,
-        body size, race, age, religion, or technology choices.
+        <a
+          href="https://openwebevents.com"
+          className="text-primary hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Web Events
+        </a>{" "}
+        is dedicated to providing a harassment-free and inclusive experience for
+        everyone, regardless of gender, gender identity and expression, sexual
+        orientation, disability, physical appearance, body size, race, age,
+        religion, or technology choices.
       </p>
       <h2 className="text-2xl font-semibold mb-2">Expected Behavior</h2>
       <ul className="list-disc pl-5 mb-4">

@@ -90,21 +90,24 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto px-4 space-y-12 py-8">
-      <section className="text-center space-y-4">
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
+    <div className="container mx-auto px-4 space-y-16 py-12 min-h-screen">
+      <section className="text-center space-y-6">
+        <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
           The Open Web Conference
         </h1>
-        <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Join us in celebrating open-source innovation and community
           collaboration at the premier event for open web advocates.
         </p>
-        <Button asChild>
+        <Button size="lg" asChild>
           <Link href="#subscribe">Stay Updated</Link>
         </Button>
       </section>
 
-      <section id="about" className="space-y-4 max-w-3xl mx-auto">
+      <section
+        id="about"
+        className="space-y-6 max-w-3xl mx-auto backdrop-blur-sm bg-card/50 p-8 rounded-lg border"
+      >
         <h2 className="text-3xl font-bold">What is the Open Web Conference?</h2>
         <p>
           The Open Web Conference is the flagship event dedicated to fostering a
@@ -132,7 +135,10 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="mission" className="space-y-4 max-w-3xl mx-auto">
+      <section
+        id="mission"
+        className="space-y-6 max-w-3xl mx-auto backdrop-blur-sm bg-card/50 p-8 rounded-lg border"
+      >
         <h2 className="text-3xl font-bold">Our Mission</h2>
         <p>
           <span className="font-bold">At Open Web Conference</span>, our mission
@@ -155,8 +161,11 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="subscribe" className="space-y-4 max-w-md mx-auto">
-        <h2 className="text-3xl font-bold text-center">
+      <section
+        id="subscribe"
+        className="space-y-6 max-w-3xl mx-auto backdrop-blur-sm bg-card/50 p-8 rounded-lg border"
+      >
+        <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
           Be Part of the Movement
         </h2>
         <p className="text-center text-muted-foreground">
@@ -186,10 +195,14 @@ export default function Home() {
         </form>
       </section>
 
-      <section className="text-center space-y-4">
+      <section className="text-center space-y-6">
         <h2 className="text-3xl font-bold">Connect With Us</h2>
-        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:space-x-4">
-          <Button variant="outline" asChild className="w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:space-x-4">
+          <Button
+            variant="outline"
+            asChild
+            className="w-full sm:w-auto hover:bg-card/50 transition-all duration-300"
+          >
             <Link
               href="https://x.com/OpenWebEvents"
               target="_blank"
@@ -199,7 +212,11 @@ export default function Home() {
               Twitter
             </Link>
           </Button>
-          <Button variant="outline" asChild className="w-full sm:w-auto">
+          <Button
+            variant="outline"
+            asChild
+            className="w-full sm:w-auto hover:bg-card/50 transition-all duration-300"
+          >
             <Link
               href="https://www.linkedin.com/company/openwebevents"
               target="_blank"
@@ -209,7 +226,11 @@ export default function Home() {
               LinkedIn
             </Link>
           </Button>
-          <Button variant="outline" asChild className="w-full sm:w-auto">
+          <Button
+            variant="outline"
+            asChild
+            className="w-full sm:w-auto hover:bg-card/50 transition-all duration-300"
+          >
             <Link
               href="https://github.com/OpenWebEvents"
               target="_blank"
@@ -220,16 +241,6 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-      </section>
-
-      <section className="text-center space-y-2 text-sm text-muted-foreground">
-        <Link href="/privacy-policy" className="hover:underline">
-          Privacy Policy
-        </Link>
-        <span> | </span>
-        <Link href="/code-of-conduct" className="hover:underline">
-          Code of Conduct
-        </Link>
       </section>
     </div>
   );
