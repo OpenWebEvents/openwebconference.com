@@ -6,9 +6,9 @@ import Link from "next/link";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
-  title: "Open Web Events | Fostering Open-Source Community",
+  title: "Open Web Conference | Fostering Open-Source Community",
   description:
-    "Open Web Events brings together enthusiasts, developers, and thought leaders to collaborate and drive the future of open-source technologies.",
+    "Join us in celebrating open-source innovation and community collaboration at the premier event for open web advocates.",
   keywords: [
     "open-source",
     "web development",
@@ -17,14 +17,14 @@ export const metadata = {
     "conference",
   ],
   openGraph: {
-    title: "Open Web Events | Fostering Open-Source Community",
+    title: "Open Web Conference | Fostering Open-Source Community",
     description:
-      "Join our vibrant community centered around open-source initiatives and the open web.",
-    url: "https://www.openwebevents.com",
-    siteName: "Open Web Events",
+      "Join us in celebrating open-source innovation and community collaboration at the premier event for open web advocates.",
+    url: "https://www.openwebconference.com",
+    siteName: "Open Web Conference",
     images: [
       {
-        url: "https://www.openwebevents.com/og-image.jpg",
+        url: "https://www.openwebconference.com/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -34,10 +34,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Open Web Events | Fostering Open-Source Community",
+    title: "Open Web Conference | Fostering Open-Source Community",
     description:
-      "Join our vibrant community centered around open-source initiatives and the open web.",
-    images: ["https://www.openwebevents.com/twitter-image.jpg"],
+      "Join us in celebrating open-source innovation and community collaboration at the premier event for open web advocates.",
+    images: ["https://www.openwebconference.com/twitter-image.jpg"],
     creator: "@OpenWebEvents",
   },
   robots: {
@@ -85,8 +85,16 @@ export default function RootLayout({
           <footer className="container mx-auto p-4">
             <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-sm text-muted-foreground">
               <div>
-                © {new Date().getFullYear()} Open Web Events. All rights
-                reserved.
+                © {new Date().getFullYear()}{" "}
+                <a
+                  href="https://openwebevents.com"
+                  className="text-primary hover:underline transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Web Events
+                </a>
+                . All rights reserved.
               </div>
               <div className="hidden sm:block">•</div>
               <div className="flex items-center gap-2">
